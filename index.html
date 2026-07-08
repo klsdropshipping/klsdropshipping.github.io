@@ -202,7 +202,84 @@
       font-size: 14px;
       line-height: 1.5;
     }
+.showcase {
+  background: #ffffff;
+}
 
+.showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+.showcase-card {
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.05);
+}
+
+.image-placeholder {
+  height: 230px;
+  background: linear-gradient(135deg, #dbeafe, #f8fafc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0f3d91;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  padding: 20px;
+}
+
+.showcase-content {
+  padding: 26px;
+}
+
+.showcase-content h3 {
+  color: #0f3d91;
+  font-size: 22px;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.showcase-content p {
+  color: #4b5563;
+  line-height: 1.7;
+  font-size: 15.5px;
+}
+
+.faq {
+  background: #f5f8ff;
+}
+
+.faq-list {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 26px 30px;
+  margin-bottom: 18px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.03);
+}
+
+.faq-item h3 {
+  color: #0f3d91;
+  font-size: 20px;
+  margin: 0 0 12px;
+}
+
+.faq-item p {
+  color: #4b5563;
+  line-height: 1.7;
+  margin: 0;
+  font-size: 15.5px;
+}
     .why-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -293,11 +370,12 @@
         font-size: 36px;
       }
 
-      .services-grid,
-      .process-grid,
-      .why-grid {
-        grid-template-columns: 1fr;
-      }
+.services-grid,
+.process-grid,
+.showcase-grid,
+.why-grid {
+  grid-template-columns: 1fr;
+}
     }
   </style>
 </head>
@@ -306,13 +384,15 @@
 
   <header>
     <div class="logo">KLS Dropshipping</div>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#process">How It Works</a>
-      <a href="#why">Why Us</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
+   <nav>
+  <a href="#services">Services</a>
+  <a href="#process">How It Works</a>
+  <a href="#showcase">Showcase</a>
+  <a href="#why">Why Us</a>
+  <a href="#faq">FAQ</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
   </header>
 
   <section class="hero">
@@ -434,7 +514,46 @@
       </div>
     </div>
   </section>
+<section class="showcase" id="showcase">
+  <div class="section-title">
+    <h2>Service Showcase</h2>
+    <p>
+      From product sourcing to packing and shipping, we help you manage the key steps of your dropshipping business in China.
+    </p>
+  </div>
 
+  <div class="showcase-grid">
+    <div class="showcase-card">
+      <div class="image-placeholder">Product Sourcing</div>
+      <div class="showcase-content">
+        <h3>Find Suitable Products</h3>
+        <p>
+          Send us product links, images, or your product idea. We help you search for suitable options and communicate with suppliers.
+        </p>
+      </div>
+    </div>
+
+    <div class="showcase-card">
+      <div class="image-placeholder">Packing Support</div>
+      <div class="showcase-content">
+        <h3>Sorting & Packing</h3>
+        <p>
+          We help sort and pack products based on your order needs, making the process easier for online sellers.
+        </p>
+      </div>
+    </div>
+
+    <div class="showcase-card">
+      <div class="image-placeholder">Shipping Arrangement</div>
+      <div class="showcase-content">
+        <h3>Ready for Shipment</h3>
+        <p>
+          After packing, we help arrange shipping to your customers or selected destination according to your requirements.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
   <section id="why">
     <div class="section-title">
       <h2>Why Choose KLS Dropshipping</h2>
@@ -465,7 +584,51 @@
       </div>
     </div>
   </section>
+<section class="faq" id="faq">
+  <div class="section-title">
+    <h2>FAQ</h2>
+    <p>
+      Here are some common questions from clients before starting cooperation.
+    </p>
+  </div>
 
+  <div class="faq-list">
+    <div class="faq-item">
+      <h3>1. What kind of products can you help source?</h3>
+      <p>
+        We can help source many types of general consumer products from China. You can send us product links, pictures, specifications, or your target product ideas.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>2. Can you help purchase products from Chinese suppliers?</h3>
+      <p>
+        Yes. We can assist with supplier communication and purchasing support, helping you reduce language and communication barriers.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>3. Do you provide packing service?</h3>
+      <p>
+        Yes. We can help sort, check, and pack products based on your requirements before shipping.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>4. Can you ship products directly to my customers?</h3>
+      <p>
+        We can help arrange shipping based on your order details, destination, and product type. You can contact us with your specific requirements.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>5. How do I start working with KLS Dropshipping?</h3>
+      <p>
+        You can send us your product request, product link, or order details by email or WhatsApp. We will check the details and reply with the next steps.
+      </p>
+    </div>
+  </div>
+</section>
   <section class="about" id="about">
     <div class="section-title">
       <h2>About KLS Dropshipping</h2>
